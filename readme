@@ -7,7 +7,7 @@ This project is a vulnerability scanner that detects common web vulnerabilities 
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/devPentest/Vulnerability-scan.git
+   git clone https://github.com/devPentest/VulnScan.git
 
 2 Navigate to the project directory:
   cd vulnerability-scanner
