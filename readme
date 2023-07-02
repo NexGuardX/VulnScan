@@ -1,0 +1,46 @@
+# Vulnerability Scan
+
+This project is a vulnerability scanner that detects common web vulnerabilities in a target website. It currently supports the detection of Cross-Site Scripting (XSS), XML External Entity (XXE), SQL Injection, and Cross-Site Request Forgery (CSRF) vulnerabilities.
+
+## Installation
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/devPentest/Vulnerability-scan.git
+
+2 Navigate to the project directory:
+  cd vulnerability-scanner
+3 Install the dependencies:
+  npm install
+
+# Usage
+
+1 Open the index.js file in a text editor.
+
+2 Modify the url variable to specify the URL of the website you want to scan.
+
+3 Run the scanner:
+  node file.js
+
+4 The scanner will perform the vulnerability detection and display the results in the console.
+Supported Vulnerabilities
+
+Cross-Site Scripting (XSS)
+The scanner searches for potentially vulnerable input fields and text areas on the target website. It uses the XSS filter library to sanitize the values and checks if the sanitized value differs from the original value. If a difference is found, a potential XSS vulnerability is detected.
+
+XML External Entity (XXE)
+The scanner makes a request to the target website and parses the response as XML. It uses XPath to search for parsererror nodes in the XML. If any parsererror nodes are found, it indicates a potential XXE vulnerability.
+
+SQL Injection
+The scanner constructs a payload and injects it into a URL parameter that is susceptible to SQL injection. It then makes a request to the target website and checks if the response contains any indications of an SQL injection, such as the presence of sensitive data or changes in the behavior of the application.
+
+Cross-Site Request Forgery (CSRF)
+The scanner simulates a CSRF attack by sending a POST request to a URL that requires a valid CSRF token. It includes a custom CSRF token in the request headers and cookies. The scanner then checks if the response contains a success message indicating that the CSRF attack was successful.
+
+Contributions
+
+Contributions to the vulnerability scanner are welcome! If you have any suggestions, improvements, or additional vulnerability detection techniques, please feel free to open an issue or submit a pull request.
+
+
+
