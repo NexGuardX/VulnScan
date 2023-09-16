@@ -21,7 +21,7 @@ This project is a vulnerability scanner that detects common web vulnerabilities 
 2 Modify the url variable to specify the URL of the website you want to scan.
 
 3 Run the scanner:
-  node file.js
+  `node file.js`
 
 4 The scanner will perform the vulnerability detection and display the results in the console.
 Supported Vulnerabilities
